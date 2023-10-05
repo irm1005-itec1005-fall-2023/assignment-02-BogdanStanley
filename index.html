@@ -2,18 +2,26 @@
 <html lang="en-ca">
 
 <head>
-  <title>Assignment 02 - Bogdan Stanley</title>
+  <title>Assignment 2 - Bogdan Stanley</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="./reset.css" />
   <link rel="stylesheet" href="./style.css" />
 </head>
-<!--https://coolors.co/palette/dad7cd-a3b18a-588157-3a5a40-344e41-->
+
+<!--
+  Sources:
+  https://coolors.co/palette/dad7cd-a3b18a-588157-3a5a40-344e41
+  https://www.w3schools.com/howto/howto_css_hero_image.asp
+-->
+<!--add a newsletter-->
 <body>
   <header>
-        <img src="https://cdn.discordapp.com/attachments/1013966635608055869/1155975925918339166/leaf.png" alt="company logo"/>
+     <div class="header-logo">
+        <img class="logo" src="https://cdn.discordapp.com/attachments/1013966635608055869/1155975925918339166/leaf.png" alt="company logo"/>
         <h2>Greenscape</h2> 
+      </div>
         <nav>
           <ul>
             <li><a href="#">Home</a></li>
@@ -22,16 +30,23 @@
           </ul>
         </nav>    
   </header>
-  <main>
+ <main>
     <section class="hero">
-  <h1>The Landscaping Company You Need</h1>
-<p>Greenscape offers a quality home gardening service in the Ottawa area. We do some paving and stonework but mainly focus on bushes, flowers, and grass. We provide a great service and are committed to giving our customers a way to achieve their goals.</p>  
-<img src="https://picsum.photos/200/300" alt="randomly generated image"/>
-<button>Learn More</button>
-  </section>
+      <div class="hero-container">
+      <h1>The Landscaping Company You Need</h1>
+      <p>Greenscape offers a quality home gardening service in the Ottawa area. We do some paving and stonework but mainly focus on bushes, flowers, and grass. We provide a great service and are committed to giving our customers a way to achieve their goals.</p>  
+      <a href="#">Learn More</a>
+      </div>
+</section>
+<section class="about">
+  <img class="about-image" src="https://images.pexels.com/photos/4079768/pexels-photo-4079768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="man cutting grass"/>
+<div class="about-text">
     <h2>A little about us</h2>
     <p> Greenscape is a landscaping business that specializes in gardening and greenery. They do some paving and stonework but mainly focus on bushes, flowers, and grass. They are a family-run company and want that to be their focus. They get to know you and what your project is, to understand what your vision is and how we can make it come to life. Unlike big-name chains that are not passionate about what they do.</p>
-    <section class="services">
+    </section>
+
+    <!--do this > https://www.w3schools.com/howto/howto_css_images_side_by_side.asp-->
+ <section class="services">
     <h2>Our Services</h2>
     <ul>
       <li>Sodding
@@ -44,6 +59,7 @@
      <img src="https://images.pexels.com/photos/6728933/pexels-photo-6728933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image of a man mowing a lawn"/></li>
     </ul>
     </section>
+<!--
     <section>
     <h3>Prices</h3>
     <table>
@@ -122,7 +138,7 @@
   </section>
   </main>
     <footer>
-      <img src="https://cdn.discordapp.com/attachments/1013966635608055869/1155975925918339166/leaf.png" alt="company logo"/>
+      <img class="logo" src="https://cdn.discordapp.com/attachments/1013966635608055869/1155975925918339166/leaf.png" alt="company logo"/>
       <h2>Greenscape</h2>
      
       <nav>
@@ -140,6 +156,7 @@
       <p>Copyright © 2023 Greenscape. All rights reserved.</p>
   </div>
     </footer>
+  -->
   </body>
 
 
