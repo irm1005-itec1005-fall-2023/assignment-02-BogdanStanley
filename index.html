@@ -2,32 +2,145 @@
 <html lang="en-ca">
 
 <head>
-  <!-- Set the page title -->
-  <title>Assignment 02</title>
-
-  <!-- Set the charset we're using to UTF-8 -->
+  <title>Assignment 02 - Bogdan Stanley</title>
   <meta charset="utf-8" />
-
-  <!-- Set the screens default zoom / scale to 1 -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Specifies the document mode for Internet Explorer -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-  <!-- We are using a CSS Reset file to standardize browser default css -->
   <link rel="stylesheet" href="./reset.css" />
-
-  <!-- This is where all of our awesome CSS code goes -->
   <link rel="stylesheet" href="./style.css" />
 </head>
-
+<!--https://coolors.co/palette/dad7cd-a3b18a-588157-3a5a40-344e41-->
 <body>
-  <!--
+  <header>
+        <img src="https://cdn.discordapp.com/attachments/1013966635608055869/1155975925918339166/leaf.png" alt="company logo"/>
+        <h2>Greenscape</h2> 
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>    
+  </header>
+  <main>
+    <section class="hero">
+  <h1>The Landscaping Company You Need</h1>
+<p>Greenscape offers a quality home gardening service in the Ottawa area. We do some paving and stonework but mainly focus on bushes, flowers, and grass. We provide a great service and are committed to giving our customers a way to achieve their goals.</p>  
+<img src="https://picsum.photos/200/300" alt="randomly generated image"/>
+<button>Learn More</button>
+  </section>
+    <h2>A little about us</h2>
+    <p> Greenscape is a landscaping business that specializes in gardening and greenery. They do some paving and stonework but mainly focus on bushes, flowers, and grass. They are a family-run company and want that to be their focus. They get to know you and what your project is, to understand what your vision is and how we can make it come to life. Unlike big-name chains that are not passionate about what they do.</p>
+    <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Sodding
+      <img src="https://images.pexels.com/photos/5231237/pexels-photo-5231237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image of sodding installation"/> </li>
+      <li>Landscaping
+      <img src="https://images.pexels.com/photos/242265/pexels-photo-242265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image of garden"/></li>
+      <li>Patio & Interlocking
+      <img src="https://images.pexels.com/photos/10831661/pexels-photo-10831661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image of a stone pathway"/></li>
+      <li>Grass Cutting
+     <img src="https://images.pexels.com/photos/6728933/pexels-photo-6728933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image of a man mowing a lawn"/></li>
+    </ul>
+    </section>
+    <section>
+    <h3>Prices</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Price</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>Sodding</td>
+            <td>$1.00/sqft</td>
+          </tr>
+          <tr>
+            <td>Landscaping</td>
+            <td>$150.00</td>
+          </tr>
+          <tr>
+            <td>Patio & Interlocking</td>
+            <td>$2000.00</td>
+          </tr>
+          <tr>
+            <td>Grass Cutting</td>
+            <td>$120.00</td>
+          </tr>
+        </tbody>
+    </table>
+  </section>
+  <section>
+    <h3>Service Area</h3>
+    <img src="https://cdn.discordapp.com/attachments/1013966635608055869/1155992569981964379/image.png" alt="Map of Ottawa"/>
+    <p> We are located in Barrhaven and our service ranges from Almote to Gatineau.</p>
+    <h3>Business Hours</h3>
+    <ul>
+      <li>Monday: 9:00am - 5:00pm</li>
+      <li>Tuesday: 9:00am - 5:00pm</li>
+      <li>Wednesday: 9:00am - 5:00pm</li>
+      <li>Thursday: 9:00am - 5:00pm</li>
+      <li>Friday: 9:00am - 5:00pm</li>
+      <li>Saturday: 9:00am - 5:00pm</li>
+      <li>Sunday: Closed</li>
+      </ul>
+  </section>
+<section>
+    <h2>Testimonials</h2>
+    <h3>John Doe</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, itaque labore incidunt in perferendis ullam maiores qui a, quos eos reprehenderit dolore. Eaque, rerum inventore ea voluptatem quis et optio?</p>
+  </section>
+    <section>
+    <h4>Leave Feedback</h4>
+    <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" autocomplete="name"/>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" autocomplete="email" required/>
+      <label for="phone">Phone</label>
+      <input id="phone" type="tel" autocomplete="tel"/>
+    </fieldset>
+    <fieldset>
+     <legend>Provide Feedback</legend>
+     <label for="service">Service</label>
+      <select id="service" required>
+        <option value="">Select a service</option>
+        <option value="sodding">Sodding</option>
+        <option value="landscaping">Landscaping</option>
+        <option value="patio">Patio & Interlocking</option>
+        <option value="grasscutting">Grass Cutting</option>
+        </select>
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" rows="10" cols="50" placeholder="Your message here - 150 character max" maxlength="150"></textarea>
+      <button>Submit</button>
+    </fieldset>
+    </form>
+  </section>
+  </main>
+    <footer>
+      <img src="https://cdn.discordapp.com/attachments/1013966635608055869/1155975925918339166/leaf.png" alt="company logo"/>
+      <h2>Greenscape</h2>
+     
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>    
+  <div class="contact">
+      <h3>Contact Us</h3>
+      <p>Phone: 613-555-1234</p>
+      <p>Email: greenscape@gmail.com</p>
+      <p>Address: 123 Bank Street, Ottawa, ON</p>
+      <p>Copyright © 2023 Greenscape. All rights reserved.</p>
+  </div>
+    </footer>
+  </body>
 
-    YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
-
-  -->
-  <h1>Assignment 02</h1>
-</body>
 
 </html>
