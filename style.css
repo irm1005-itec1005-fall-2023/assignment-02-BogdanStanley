@@ -252,12 +252,42 @@ h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;  
+  background-color: #588157;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 .testimonials-container img {
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   object-fit: cover;
   margin: 1rem;
+}
+.testimonial-text {
+  width: 40rem;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: #ffffff;
+  color: #344E41;
+  border-radius: 1rem;
+}
+.testimonial-text h2 {
+  font-size: 4rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: start;
+  margin-bottom: -2rem;
+}
+.testimonial-text p {
+  font-size: 1.5rem;
+  text-align: start;
+  margin-bottom: 1rem;
+}
+.testimonial-text h3 {
+  font-size: 2rem;
+  text-align: end;
+}
+.feedback {
+  background-color: #A3B18A;
 }
 
