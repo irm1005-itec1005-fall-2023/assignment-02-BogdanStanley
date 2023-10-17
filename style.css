@@ -1,47 +1,31 @@
-/*
- * Assignment 02
- * CSS FILE
- */
-
-
- html {
+html {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #dad7cd;
-  
 }
-
 header {
   padding: 2rem;
   background-color: #588157;
   color: #ffffff;
-
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  
+  align-items: start; 
 }
-
 .header-logo {
   display: flex;
   align-items: center;
 }
-
 .logo {
-width: 2rem;
-height: 2rem;
-display: flex;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
 }
-
 header h2 {
   margin-left: 1rem;
 }
-
 header nav {
-  display: flex;
-    
+  display: flex;  
   align-items: center; 
 }
-
 header nav ul {
   display: flex;
   justify-content: center;
@@ -49,25 +33,19 @@ header nav ul {
   list-style: none;
   padding:0.8rem
 }
-
 header nav ul li {
   margin-left: 2rem;
-
-  
 }
-
 header nav ul li a {
   display:flex;
   color: #ffffff;
   text-decoration: none;  
 }
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f1faee;
   color: #242121;
   font-size: 1.5rem;
-
   min-width: 100%;
   min-height: 100%;
 }
@@ -75,7 +53,6 @@ header nav ul li a:hover {
   color: #e3d2d4;
   text-decoration: underline;
 }
-
 .hero {
   display: flex;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/277667/pexels-photo-277667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
@@ -87,9 +64,9 @@ header nav ul li a:hover {
   padding: 10rem;
 }
 .hero-container {
-display: flex;
-flex-direction: column;
-color:#ffffff;
+  display: flex;
+  flex-direction: column;
+  color:#ffffff;
 }
 .hero-container h1 {
   font-size: 3rem;
@@ -97,7 +74,6 @@ color:#ffffff;
   display: flex;
   justify-content: center;
 }
-
 .hero-container p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -115,7 +91,9 @@ color:#ffffff;
   margin-inline: 10rem;
   border-radius: 1rem;
 }
-
+.hero-container a:hover {
+  background-color: #3A5A40;
+}
 .about {
   display: flex;
   flex-direction: row;
@@ -131,7 +109,6 @@ color:#ffffff;
   width: 400%;
   float: left;
   border-radius: 3rem;  
-  
 }
 .about-text {
   padding: 2rem;
@@ -145,22 +122,20 @@ color:#ffffff;
   background: linear-gradient(180deg, rgba(88,129,87,1) 0%, rgba(163,177,138,1) 35%, rgba(218,215,205,1) 100%); 
   text-align: center;
   padding: 8rem;
-  
 }
 .vertical-line {
   border-left: thick solid #344E41;
-
 } 
 .services {
 display: flex;
 flex-direction: row;
 justify-content: space-around;
 }
-
 .product-container {
   display: flex;
   flex-direction: column;
   width: 25rem;
+  height: 45rem;
   background-color: #ffffff;
   border-radius: 2rem;
   margin: 2rem;
@@ -182,6 +157,7 @@ justify-content: space-around;
 .product-text h3 {
   font-size: 2rem;
   color:#344E41;
+  text-align: start;
 }
 .product-text p {
   font-size: 1rem;
@@ -202,11 +178,12 @@ justify-content: space-around;
   font-size: 1rem;
   margin-top: 1rem;
 }
-
+.product-text a:hover {
+  background-color: #3A5A40;
+}
 h3 {
   text-align: center;
 }
-
 .horizontal-line {
   border-bottom: thick solid #A3B18A;
   margin: 5rem;
@@ -285,7 +262,6 @@ h3 {
   font-size: 2rem;
   text-align: end;
 }
-
 .feedback {
   width: 70%;
   margin: auto;
@@ -294,8 +270,7 @@ h3 {
   padding: 1rem;
   box-shadow: 0 3px 1rem #344E41;
   border-radius: 50px;
-  
-}  
+} 
 .feedback h2 {
   text-align: center;
   margin-bottom: 1rem;
@@ -305,24 +280,21 @@ h3 {
   text-align: center;
 }
 .feedback fieldset {
-border: none;
+  border: none;
 }
-
 .form-input {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin: 1rem;
 }
-
 .form-input label {
   margin-bottom: 1rem;
 }
 .form-input textarea{ 
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 1rem;
   border-radius: 1rem;
-  margin: 1rem;
   resize: none;
 }
 .feedback a {
@@ -335,10 +307,12 @@ border: none;
   border-radius: 0.5rem;
   padding: 1rem;
   font-size: 1rem;
+  margin: auto;
   margin-top: 1rem;
-  margin: auto
 }
-
+.feedback a:hover {
+  background-color: #3A5A40;
+}
 footer {
   background-color: #466857;
   color: white;
@@ -367,26 +341,22 @@ footer {
   padding: 1rem;
   margin-left: 1rem;
 }
-
 footer nav {
   display: flex;
   margin-left: auto;
 }
-
 footer nav ul {
   display: flex;
   list-style: none;
   padding:0.8rem  
 }
-
 footer nav ul li {
   margin-left: 2rem;
 }
 footer nav ul li a {
   color: #ffffff;
   text-decoration: none;  
-  padding: 20px;
-  border-radius: 1rem;
+  padding: 2rem;
 }
 footer nav ul li a:hover {
   color: #e3d2d4;
