@@ -287,7 +287,56 @@ h3 {
   font-size: 2rem;
   text-align: end;
 }
+
 .feedback {
-  background-color: #A3B18A;
+  width: 70%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  box-shadow: 0 3px 1rem #344E41;
+  border-radius: 50px;
+  
+}  
+.feedback h2 {
+  text-align: center;
+  margin-bottom: 1rem;
 }
+.feedback legend {
+  font-size: 2rem;
+  text-align: center;
+}
+.feedback fieldset {
+border: none;
+}
+
+.form-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.form-input label {
+  margin-bottom: 1rem;
+}
+.form-input textarea{ 
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.feedback a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #344E41;
+  color: white;
+  width: 15rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin: auto
+}
+
 

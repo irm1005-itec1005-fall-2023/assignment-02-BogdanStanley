@@ -120,27 +120,38 @@
     <form>
     <fieldset>
       <legend>Personal Information</legend>
+      <div class="form-input">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" placeholder="John Doe" autocomplete="name"/>
+    </div>
+    <div class="form-input">
       <label for="email">Email</label>
       <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" autocomplete="email" required/>
+      </div>
+      <div class="form-input">
       <label for="phone">Phone</label>
-      <input id="phone" type="tel" autocomplete="tel"/>
+      <input id="phone" type="tel" placeholder="(613)-555-5555"autocomplete="tel"/>
+      </div>
     </fieldset>
     <fieldset>
      <legend>Provide Feedback</legend>
+     <div class="form-input">
      <label for="service">Service</label>
       <select id="service" required>
-        <option value="">Select a service</option>
+        <option value="">--Select a service--</option>
         <option value="sodding">Sodding</option>
         <option value="landscaping">Landscaping</option>
         <option value="patio">Patio & Interlocking</option>
         <option value="grasscutting">Grass Cutting</option>
         </select>
+        </div>
+        <div class="form-input">
       <label for="feedback">Feedback:</label>
       <textarea id="feedback" rows="10" cols="50" placeholder="Your message here - 150 character max" maxlength="150"></textarea>
-      <button>Submit</button>
+      <a href="#">Submit</a>
+      </div>
     </fieldset>
+  </div>
     </form>
   </section>
   </main>
