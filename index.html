@@ -14,6 +14,7 @@
   https://www.w3schools.com/howto/howto_css_hero_image.asp
   https://www.w3schools.com/howto/howto_css_images_side_by_side.asp
   https://stackoverflow.com/questions/5235142/how-do-i-disable-the-resizable-property-of-a-textarea
+  https://www.pluralsight.com/guides/how-to-hide-text-from-screen-readers
 -->
 <!--add a newsletter-->
 <body>
@@ -43,6 +44,7 @@
 <div class="about-text">
     <h2>A little about us</h2>
     <p> Greenscape is a landscaping business that specializes in gardening and greenery. They do some paving and stonework but mainly focus on bushes, flowers, and grass. They are a family-run company and want that to be their focus. They get to know you and what your project is, to understand what your vision is and how we can make it come to life. Unlike big-name chains that are not passionate about what they do.</p>
+    </div>
     </section>
  <section class="background-transition">
   <div class="vertical-line">
@@ -54,7 +56,7 @@
         <div class="product-text">
         <h2>Lawn</h2>
         <h3>Sodding</h3>
-        <p>Imagine a world where you would never have to mow the lawn again. Never having to buy fertilizer or weed killer. We are able to install synthetic grass on to your lawn.<p>
+        <p>Imagine a world where you would never have to mow the lawn again. Never having to buy fertilizer or weed killer. We are able to install synthetic grass on to your lawn. Lorem ipsum dolor sit amet consectetur adipisicing elit.<p>
         <h4>$1.00/sqft</h4>
         <a href="#">Learn More</a>
         </div>
@@ -64,7 +66,7 @@
         <div class="product-text">
         <h2>Garden</h2>
         <h3>Landscaping</h3>
-        <p>Is your garden not looking too good? We are here to help. We provide a personalized landscaping experience suited to your every need.</p>
+        <p>Is your garden not looking too good? We are here to help. We provide a personalized landscaping experience suited to your every need. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum sequi aut quibusdam.</p>
         <h4>$150.00</h4>
         <a href="#">Learn More</a>
         </div>
@@ -110,9 +112,10 @@
 <section class="testimonials-container">
     <img src="https://t4.ftcdn.net/jpg/02/24/86/95/360_F_224869519_aRaeLneqALfPNBzg0xxMZXghtvBXkfIA.jpg" alt="Image of John Doe"/>
     <div class="testimonial-text">
-    <h2>"</h2>
+    <div class="quote-symbol"><p aria-hidden="true">"</p></div>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, itaque labore incidunt in perferendis ullam maiores qui a, quos eos reprehenderit dolore. Eaque, rerum inventore ea voluptatem quis et optio?</p>
-    <h3>- John Doe</h3>
+    <div class="testimonial-quote"><p>- <span class="screen-reader">Quote by </span>John Doe</p></div>
+    </div>
   </section>
     <section class="feedback">
     <h2>Request a Quote</h2>
@@ -129,7 +132,7 @@
       </div>
       <div class="form-input">
       <label for="phone">Phone</label>
-      <input id="phone" type="tel" placeholder="(613)-555-5555"autocomplete="tel"/>
+      <input id="phone" type="tel" placeholder="(613)-555-5555" autocomplete="tel"/>
       </div>
     </fieldset>
     <fieldset>
@@ -150,7 +153,6 @@
       <a href="#">Submit</a>
       </div>
     </fieldset>
-  </div>
     </form>
   </section>
   </main>
